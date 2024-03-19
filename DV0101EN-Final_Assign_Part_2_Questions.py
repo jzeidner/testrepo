@@ -113,7 +113,8 @@ def update_output_container(selected_statistics, input_year):
                   y='Automobile_Sales',
                   labels={'unemployment_rate': 'Unemployment Rate', 'Automobile_Sales': 'Average Automobile Sales'},
                   title="Effect of Unemployment Rate on Sales of various Vehicle Types"))
-    return [html.Div(className='chart-item', children=[html.Div(children=R_chart1),html.Div(children=R_chart2)],style={'display': 'flex'}),
+        return [
+            html.Div(className='chart-item', children=[html.Div(children=R_chart1),html.Div(children=R_chart2)],style={'display': 'flex'}),
             html.Div(className='chart-item', children=[html.Div(children=R_chart3),html.Div(children=R_chart4)],style={'display': 'flex'})]
 
 # TASK 2.6: Create and display graphs for Yearly Report Statistics
